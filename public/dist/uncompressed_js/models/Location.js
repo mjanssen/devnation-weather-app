@@ -1,0 +1,1 @@
+site.models.Location = Backbone.Model.extend({});

@@ -1,0 +1,66 @@
+<div class="col-md-4">
+<h3><%= location[0].city.name %> (<%= (location[0].temperature.max.value).toFixed(0) %> °C)<i class="wi wi-<%= location[0].weather.icon %>"></i></h3>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Current weather</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Location</td>
+        <td><%= location[0].city.name %></td>
+    </tr>
+    <tr>
+        <td>Clouds</td>
+        <td><%= location[0].clouds.value %></td>
+    </tr>
+    <tr>
+        <td>Humidity</td>
+        <td><%= location[0].humidity.value %> %</td>
+    </tr>
+    <tr>
+        <td>Temperature</td>
+        <td><%= (location[0].temperature.max.value).toFixed(0) %> °C</td>
+    </tr>
+    <tr>
+        <td>Weather</td>
+        <td><%= location[0].weather.description %></td>
+    </tr>
+    <tr>
+        <td>Pressure</td>
+        <td><%= location[0].pressure.value %>
+            <!--°-->
+        </td>
+    </tr>
+    <tr>
+        <td>Wind direction</td>
+        <td><%= location[0].wind.speed.description %>, <%= location[0].wind.direction.description %></td>
+    </tr>
+
+    </tbody>
+</table>
+
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Forecast</th>
+        <th></th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <% for(var i = 0; i < 7; i++){ %>
+    <tr>
+        <td><%= location[i].day %></td>
+        <td><%= (location[i].temperature.max.value).toFixed(0) %> °C</td>
+        <td><i class="wi wi-<%= location[i].weather.icon %>"></i></td>
+    </tr>
+    <% } %>
+
+    </tbody>
+</table>
+</div>

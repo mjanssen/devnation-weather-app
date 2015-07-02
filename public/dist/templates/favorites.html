@@ -1,0 +1,12 @@
+<% _.each(favorites, function(favorite, index, list){ %>
+
+<li class="favorite">
+    <a href="info/<%= favorite.city %>">
+
+        <i class="wi wi-<%= favorite.icon %>"> <%= favorite.temperature %> °C</i>
+        <span class="city"> <%= favorite.city %> </span>
+        <span class="temp"> <%= favorite.temperature %> °C </span>
+    </a>
+</li>
+
+<% }); %>

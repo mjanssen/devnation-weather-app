@@ -1,0 +1,17 @@
+[
+  {
+    "city": "Bergen op Zoom",
+    "temperature": "19",
+    "icon": "02d"
+  },
+  {
+    "city": "Rotterdam",
+    "temperature": "17",
+    "icon": "02n"
+  },
+  {
+    "city": "Barcelona",
+    "temperature": "24",
+    "icon": "09d"
+  }
+]

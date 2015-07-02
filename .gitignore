@@ -1,0 +1,6 @@
+app/vendor
+app/cache
+app/config/config.php
+public/_scripts
+public/_styles
+public/gulpfile.js

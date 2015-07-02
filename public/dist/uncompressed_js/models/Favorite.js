@@ -1,0 +1,1 @@
+site.models.Favorite = Backbone.Model.extend({});

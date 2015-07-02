@@ -1,0 +1,19 @@
+{
+  "name":        "denvation/weather-api",
+  "description": "Official weather api weather.devnation.net",
+  "type":        "project",
+  "license":     "BSD-3-Clause",
+  "require": {
+    "filp/whoops": "^1.1",
+    "cmfcmf/openweathermap-php-api": "~2.0",
+    "imagine/imagine":"dev-master",
+    "geoip2/geoip2": "~2.0",
+    "willdurand/geocoder": "^3.0",
+    "crada/phalcon-user-plugin": "dev-master",
+    "swiftmailer/swiftmailer": "@stable"
+  },
+  "require-dev": {
+    "fzaninotto/faker": "1.4.*@dev",
+    "squizlabs/php_codesniffer": "1.*"
+  }
+}
